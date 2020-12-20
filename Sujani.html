@@ -1,0 +1,550 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="paXKus6Jh5xJumVtnMBVA65jB2Ro4DCpx4TG1MN0">
+
+    <title>Science Online School</title>
+
+    <!-- Scripts -->
+    <script src="sujanijava.js"></script>
+
+    <!-- Fonts -->
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet" type="text/css">
+
+    <!-- Styles -->
+    <link href="sujanics.css" rel="stylesheet">
+    <style>
+        #main-tabs.nav-tabs .nav-item{
+            background-color: #eeff00;
+            margin-left: 2px;
+            border: 30px 30px 0 0;
+            border-top-right-radius: 30px;
+            border-top-left-radius: 30px;
+            color: rgb(0, 0, 0);
+            width: 170px;
+        }
+        #main-tabs.nav-tabs .nav-item a{
+            color: rgb(0, 0, 0);
+            text-align: center;
+        }
+        #main-tabs.nav-tabs .nav-link.active {
+            color: white;
+            background-color: #a80808;
+            border-color: #dee2e6 #dee2e6 #000000;
+        }
+        #sub-tabs.nav-tabs .nav-item{
+            background-color: #000000c9;
+            margin: 2px;
+            border: 30px 30px 0 0;
+            border-top-right-radius: 20px;
+            border-top-left-radius: 20px;
+            color: white;
+        }
+        #sub-tabs.nav-tabs .nav-item a{
+            color: rgb(255, 255, 255);
+        }
+        #sub-tabs.nav-tabs .nav-link.active {
+            color: rgb(0, 0, 0);
+            background-color: #ffe600; 
+            border-color: #dee2e6 #dee2e6 #f5f8fa;
+        }
+        .primary-color {
+            border-color: #fffb00; 
+            background: #000000; 
+            color: #ffd900;
+        }
+        .primary-color:hover {
+            border-color: #07ce32; 
+            background: #000000; 
+            color: #ff0000;
+        }
+        .btn-width{
+            width: 150px;
+        } 
+        #note{
+            list-style: none;
+            padding: 0;
+        }
+        #note li::before{
+            content: "*";
+            color: red;
+            font-weight: bold;
+            display: inline-block;
+            font-size: 16px;
+            margin-right: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        
+
+        <main class="py-4">
+            <div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-header primary-color"><b>Science Online School</b> <i>Grade 11</i> - Student Dashboard</div>
+
+                <div class="card-body">
+                                        <ul class="nav nav-tabs" id="main-tabs">
+                       
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#virtual_classes" role="tab" aria-controls="virtual_classes" aria-selected="true"><b>Virtual Class</b></a>
+                        </li>
+                    </ul> 
+                    
+                        <div id="virtual_classes" class="tab-pane" role="tabpanel">
+                            <div class="row" style="margin-top: 15px;">
+                                <div class="col-md-12">
+                                    <ul class="nav nav-tabs" id="sub-tabs">
+                                                                                    <li class="nav-item">
+                                                <a class="nav-link  active  " data-toggle="tab" href="#sciencesaturday" role="tab" aria-controls="subject-1" aria-selected="true"><b>Science</b> (Saturday)</a>
+                                            </li>
+                                                                                    <li class="nav-item">
+                                                <a class="nav-link " data-toggle="tab" href="#sciencetuesday" role="tab" aria-controls="subject-2" aria-selected="true"><b>Science</b> (Tuesday)</a>
+                                            </li>
+                                                                                    <li class="nav-item">
+                                                <a class="nav-link " data-toggle="tab" href="#liverevision" role="tab" aria-controls="subject-3" aria-selected="true"><b>Live</b> Revision</a>
+                                            </li>
+                                                                                    
+                                                                            </ul>
+                                    <div class="tab-content">
+                                                                                    <div id="sciencesaturday" class="tab-pane fade  show active " role="tabpanel">
+                                                <div class="row" style="margin-top: 15px;">
+                                                    <div class="col-md-12" style="margin-top: 5px; margin-bottom: 15px;">
+                                                        Day : <strong>Saturday</strong>
+                                                                                                                    <br>
+                                                        Time : <strong>1.00 p.m to 3.00 p.m</strong>
+                                                        
+                                                    </div>
+                                                   
+                                                    <div class="col-md-12">
+                                                        <table class="table table-striped">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Week</th>
+                                                                    <th>Class</th>
+                                                                    <th>Tute</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                                                                                                                                                                                                                <tr>
+                                                                    <td>Week 1 - 2020-08-01</td>
+                                                                    <td>
+                                                                        <div class="virtual-class" id="class-1-1" data-id="class-1-1" data-strat_time="12/19/2020 23:25:00" data-end_time="12/19/2020 23:27:00">
+                                                                            <button class="btn btn-danger vc-danger-btn btn-width">Session Closed</button>
+                                                                            <button class="btn btn-warning vc-warning-btn btn-width">Ready For Class</button>
+                                                                            <button class="btn btn-default vc-default-btn btn-width">Not Available</button>
+                                                                            <a href="" target="_blank" class="btn btn-success vc-success-btn btn-width" style="color: white;">Join to Session</a>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div id="tute-1-1" data-id="tute-1-1" data-strat_time="08/08/2020 19:00:00" data-end_time="08/08/2020 21:00:00">
+                                                                            
+                                                                                        <a href="" target="_blank" class="btn btn-success vc-success-btn btn-width" style="color: white;">Paper</a>
+                                                                                                                                                    </div>
+                                                                    </td>
+                                                                </tr>
+                                                                                                                                                                                                <tr>
+                                                                    <td>Week 2 - 2020-08-08</td>
+                                                                    <td>
+                                                                        <div class="virtual-class" id="class-1-2" data-id="class-1-2" data-strat_time="08/08/2020 19:00:00" data-end_time="08/08/2020 21:00:00">
+                                                                            <button class="btn btn-danger vc-danger-btn btn-width">Session Closed</button>
+                                                                            <button class="btn btn-warning vc-warning-btn btn-width">Ready For Class</button>
+                                                                            <button class="btn btn-default vc-default-btn btn-width">Not Available</button>
+                                                                            <a href="" target="_blank" class="btn btn-success vc-success-btn btn-width" style="color: white;">Go To Class</a>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div id="tute-1-2" data-id="tute-1-2" data-strat_time="08/08/2020 19:00:00" data-end_time="08/08/2020 21:00:00">
+                                                                            
+                                                                             
+                                                                                <button class="btn btn-default vc-default-btn btn-width">Not Available</button>
+                                                                                                                                                    </div>
+                                                                    </td>
+                                                                </tr>
+                                                                                                                                                                                                <tr>
+                                                                    <td>Week 3 - 2020-08-15</td>
+                                                                    <td>
+                                                                        <div class="virtual-class" id="class-1-3" data-id="class-1-3" data-strat_time="08/15/2020 19:00:00" data-end_time="08/15/2020 21:00:00">
+                                                                            <button class="btn btn-danger vc-danger-btn btn-width">Session Closed</button>
+                                                                            <button class="btn btn-warning vc-warning-btn btn-width">Ready For Class</button>
+                                                                            <button class="btn btn-default vc-default-btn btn-width">Not Available</button>
+                                                                            <a href="" target="_blank" class="btn btn-success vc-success-btn btn-width" style="color: white;">Go To Class</a>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div id="tute-1-3" data-id="tute-1-3" data-strat_time="08/15/2020 19:00:00" data-end_time="08/15/2020 21:00:00">
+                                                                            
+                                                                             
+                                                                                <button class="btn btn-default vc-default-btn btn-width">Not Available</button>
+                                                                                                                                                    </div>
+                                                                    </td>
+                                                                </tr>
+                                                                                                                                                                                                <tr>
+                                                                    <td>Week 4 - 2020-08-22</td>
+                                                                    <td>
+                                                                        <div class="virtual-class" id="class-1-4" data-id="class-1-4" data-strat_time="12/19/2020 12:41:00" data-end_time="12/19/2020 12:45:00">
+                                                                            <button class="btn btn-danger vc-danger-btn btn-width">Session Closed</button>
+                                                                            <button class="btn btn-warning vc-warning-btn btn-width">Ready For Session</button>
+                                                                            <button class="btn btn-default vc-default-btn btn-width">Not Available</button>
+                                                                            <a href="https://zoom.us" target="_blank" class="btn btn-success vc-success-btn btn-width" style="color: white;">Join Session</a>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div id="tute-1-4" data-id="tute-1-4" data-strat_time="08/22/2020 19:00:00" data-end_time="08/22/2020 21:00:00">
+                                                                            
+                                                                             
+                                                                                <button class="btn btn-default vc-default-btn btn-width">Not Available</button>
+                                                                                                                                                    </div>
+                                                                    </td>
+                                                                </tr>
+                                                                                                                                                                                                <tr>
+                                                                    <td>Week 5 - 2020-08-29</td>
+                                                                    <td>
+                                                                        <div class="virtual-class" id="class-1-5" data-id="class-1-5" data-strat_time="08/29/2020 19:00:00" data-end_time="08/29/2020 21:00:00">
+                                                                            <button class="btn btn-danger vc-danger-btn btn-width">Session Closed</button>
+                                                                            <button class="btn btn-warning vc-warning-btn btn-width">Ready For Class</button>
+                                                                            <button class="btn btn-default vc-default-btn btn-width">Not Available</button>
+                                                                            <a href="" target="_blank" class="btn btn-success vc-success-btn btn-width" style="color: white;">Go To Class</a>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div id="tute-1-5" data-id="tute-1-5" data-strat_time="08/29/2020 19:00:00" data-end_time="08/29/2020 21:00:00">
+                                                                            
+                                                                             
+                                                                                <button class="btn btn-default vc-default-btn btn-width">Not Available</button>
+                                                                                                                                                    </div>
+                                                                    </td>
+                                                                </tr>
+                                                                                                                                                                                                                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                                                                    <div id="sciencetuesday" class="tab-pane fade " role="tabpanel">
+                                                <div class="row" style="margin-top: 15px;">
+                                                    <div class="col-md-12" style="margin-top: 5px; margin-bottom: 15px;">
+                                                        Day : <strong>Tuesday</strong>
+                                                        <br>
+                                                        Time : <strong>8.00 p.m to 10.00 p.m</strong>
+
+                                                    </div>
+                                                    
+                                                    <div class="col-md-12">
+                                                        <table class="table table-striped">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Week</th>
+                                                                    <th>Class</th>
+                                                                    <th>Tute</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                                                                                                                                                                                                                <tr>
+                                                                    <td>Week 1 - 2020-08-01</td>
+                                                                    <td>
+                                                                        <div class="virtual-class" id="class-2-1" data-id="class-2-1" data-strat_time="08/01/2020 21:00:00" data-end_time="08/01/2020 23:00:00">
+                                                                            <button class="btn btn-danger vc-danger-btn btn-width">Session Closed</button>
+                                                                            <button class="btn btn-warning vc-warning-btn btn-width">Ready For Class</button>
+                                                                            <button class="btn btn-default vc-default-btn btn-width">Not Available</button>
+                                                                            <a href="https://bluejeans.com/684684337/7428" target="_blank" class="btn btn-success vc-success-btn btn-width" style="color: white;">Go To Class</a>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div id="tute-2-1" data-id="tute-2-1" data-strat_time="08/01/2020 21:00:00" data-end_time="08/01/2020 23:00:00">
+                                                                            
+                                                                             <a href="https://tinyurl.com/y4grlf7m" target="_blank" class="btn btn-success vc-success-btn btn-width" style="color: white;">Download tute</a>
+                                                                                                                                                    </div>
+                                                                    </td>
+                                                                </tr>
+                                                                                                                                                                                                <tr>
+                                                                    <td>Week 2 - 2020-08-08</td>
+                                                                    <td>
+                                                                        <div class="virtual-class" id="class-2-2" data-id="class-2-2" data-strat_time="08/08/2020 21:00:00" data-end_time="08/08/2020 23:00:00">
+                                                                            <button class="btn btn-danger vc-danger-btn btn-width">Session Closed</button>
+                                                                            <button class="btn btn-warning vc-warning-btn btn-width">Ready For Class</button>
+                                                                            <button class="btn btn-default vc-default-btn btn-width">Not Available</button>
+                                                                            <a href="" target="_blank" class="btn btn-success vc-success-btn btn-width" style="color: white;">Go To Class</a>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div id="tute-2-2" data-id="tute-2-2" data-strat_time="08/08/2020 21:00:00" data-end_time="08/08/2020 23:00:00">
+                                                                            
+                                                                             
+                                                                                <button class="btn btn-default vc-default-btn btn-width">Not Available</button>
+                                                                                                                                                    </div>
+                                                                    </td>
+                                                                </tr>
+                                                                                                                                                                                                <tr>
+                                                                    <td>Week 3 - 2020-08-15</td>
+                                                                    <td>
+                                                                        <div class="virtual-class" id="class-2-3" data-id="class-2-3" data-strat_time="08/15/2020 21:00:00" data-end_time="08/15/2020 23:00:00">
+                                                                            <button class="btn btn-danger vc-danger-btn btn-width">Session Closed</button>
+                                                                            <button class="btn btn-warning vc-warning-btn btn-width">Ready For Class</button>
+                                                                            <button class="btn btn-default vc-default-btn btn-width">Not Available</button>
+                                                                            <a href="" target="_blank" class="btn btn-success vc-success-btn btn-width" style="color: white;">Go To Class</a>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div id="tute-2-3" data-id="tute-2-3" data-strat_time="08/15/2020 21:00:00" data-end_time="08/15/2020 23:00:00">
+                                                                            
+                                                                             
+                                                                                <button class="btn btn-default vc-default-btn btn-width">Not Available</button>
+                                                                                                                                                    </div>
+                                                                    </td>
+                                                                </tr>
+                                                                                                                                                                                                <tr>
+                                                                    <td>Week 4 - 2020-08-22</td>
+                                                                    <td>
+                                                                        <div class="virtual-class" id="class-2-4" data-id="class-2-4" data-strat_time="08/22/2020 21:00:00" data-end_time="08/22/2020 23:00:00">
+                                                                            <button class="btn btn-danger vc-danger-btn btn-width">Session Closed</button>
+                                                                            <button class="btn btn-warning vc-warning-btn btn-width">Ready For Class</button>
+                                                                            <button class="btn btn-default vc-default-btn btn-width">Not Available</button>
+                                                                            <a href="" target="_blank" class="btn btn-success vc-success-btn btn-width" style="color: white;">Go To Class</a>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div id="tute-2-4" data-id="tute-2-4" data-strat_time="08/22/2020 21:00:00" data-end_time="08/22/2020 23:00:00">
+                                                                            
+                                                                             
+                                                                                <button class="btn btn-default vc-default-btn btn-width">Not Available</button>
+                                                                                                                                                    </div>
+                                                                    </td>
+                                                                </tr>
+                                                                                                                                                                                                <tr>
+                                                                    <td>Week 5 - 2020-08-29</td>
+                                                                    <td>
+                                                                        <div class="virtual-class" id="class-2-5" data-id="class-2-5" data-strat_time="08/29/2020 21:00:00" data-end_time="08/29/2020 23:00:00">
+                                                                            <button class="btn btn-danger vc-danger-btn btn-width">Session Closed</button>
+                                                                            <button class="btn btn-warning vc-warning-btn btn-width">Ready For Class</button>
+                                                                            <button class="btn btn-default vc-default-btn btn-width">Not Available</button>
+                                                                            <a href="" target="_blank" class="btn btn-success vc-success-btn btn-width" style="color: white;">Go To Class</a>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div id="tute-2-5" data-id="tute-2-5" data-strat_time="08/29/2020 21:00:00" data-end_time="08/29/2020 23:00:00">
+                                                                            
+                                                                             
+                                                                                <button class="btn btn-default vc-default-btn btn-width">Not Available</button>
+                                                                                                                                                    </div>
+                                                                    </td>
+                                                                </tr>
+                                                                                                                                                                                                                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                                                                    <div id="liverevision" class="tab-pane fade " role="tabpanel">
+                                                <div class="row" style="margin-top: 15px;">
+                                                    <div class="col-md-12" style="margin-top: 5px; margin-bottom: 15px;">
+                                                        Day : <strong>Sunday</strong>
+                                                        <br>
+                                                        Time : <strong>6.00 a.m to 8.00 a.m</strong>
+
+                                                    </div>
+                                                    
+                                                    <div class="col-md-12">
+                                                        <table class="table table-striped">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Week</th>
+                                                                    <th>Class</th>
+                                                                    <th>Tute</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                                                                                                                                                                                                                <tr>
+                                                                    <td>Week 1 - 2020-08-02</td>
+                                                                    <td>
+                                                                        <div class="virtual-class" id="class-3-1" data-id="class-3-1" data-strat_time="08/02/2020 11:00:00" data-end_time="08/02/2020 13:00:00">
+                                                                            <button class="btn btn-danger vc-danger-btn btn-width">Session Closed</button>
+                                                                            <button class="btn btn-warning vc-warning-btn btn-width">Ready For Class</button>
+                                                                            <button class="btn btn-default vc-default-btn btn-width">Not Available</button>
+                                                                            <a href="" target="_blank" class="btn btn-success vc-success-btn btn-width" style="color: white;">Go To Class</a>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div id="tute-3-1" data-id="tute-3-1" data-strat_time="08/02/2020 11:00:00" data-end_time="08/02/2020 13:00:00">
+                                                                            
+                                                                             
+                                                                                <button class="btn btn-default vc-default-btn btn-width">Not Available</button>
+                                                                                                                                                    </div>
+                                                                    </td>
+                                                                </tr>
+                                                                                                                                                                                                <tr>
+                                                                    <td>Week 2 - 2020-08-09</td>
+                                                                    <td>
+                                                                        <div class="virtual-class" id="class-3-2" data-id="class-3-2" data-strat_time="08/09/2020 11:00:00" data-end_time="08/09/2020 13:00:00">
+                                                                            <button class="btn btn-danger vc-danger-btn btn-width">Session Closed</button>
+                                                                            <button class="btn btn-warning vc-warning-btn btn-width">Ready For Class</button>
+                                                                            <button class="btn btn-default vc-default-btn btn-width">Not Available</button>
+                                                                            <a href="" target="_blank" class="btn btn-success vc-success-btn btn-width" style="color: white;">Go To Class</a>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div id="tute-3-2" data-id="tute-3-2" data-strat_time="08/09/2020 11:00:00" data-end_time="08/09/2020 13:00:00">
+                                                                            
+                                                                             
+                                                                                <button class="btn btn-default vc-default-btn btn-width">Not Available</button>
+                                                                                                                                                    </div>
+                                                                    </td>
+                                                                </tr>
+                                                                                                                                                                                                <tr>
+                                                                    <td>Week 3 - 2020-08-16</td>
+                                                                    <td>
+                                                                        <div class="virtual-class" id="class-3-3" data-id="class-3-3" data-strat_time="08/16/2020 11:00:00" data-end_time="08/16/2020 13:00:00">
+                                                                            <button class="btn btn-danger vc-danger-btn btn-width">Session Closed</button>
+                                                                            <button class="btn btn-warning vc-warning-btn btn-width">Ready For Class</button>
+                                                                            <button class="btn btn-default vc-default-btn btn-width">Not Available</button>
+                                                                            <a href="" target="_blank" class="btn btn-success vc-success-btn btn-width" style="color: white;">Go To Class</a>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div id="tute-3-3" data-id="tute-3-3" data-strat_time="08/16/2020 11:00:00" data-end_time="08/16/2020 13:00:00">
+                                                                            
+                                                                             
+                                                                                <button class="btn btn-default vc-default-btn btn-width">Not Available</button>
+                                                                                                                                                    </div>
+                                                                    </td>
+                                                                </tr>
+                                                                                                                                                                                                <tr>
+                                                                    <td>Week 4 - 2020-08-23</td>
+                                                                    <td>
+                                                                        <div class="virtual-class" id="class-3-4" data-id="class-3-4" data-strat_time="08/23/2020 11:00:00" data-end_time="08/23/2020 13:00:00">
+                                                                            <button class="btn btn-danger vc-danger-btn btn-width">Session Closed</button>
+                                                                            <button class="btn btn-warning vc-warning-btn btn-width">Ready For Class</button>
+                                                                            <button class="btn btn-default vc-default-btn btn-width">Not Available</button>
+                                                                            <a href="" target="_blank" class="btn btn-success vc-success-btn btn-width" style="color: white;">Go To Class</a>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div id="tute-3-4" data-id="tute-3-4" data-strat_time="08/23/2020 11:00:00" data-end_time="08/23/2020 13:00:00">
+                                                                            
+                                                                             
+                                                                                <button class="btn btn-default vc-default-btn btn-width">Not Available</button>
+                                                                                                                                                    </div>
+                                                                    </td>
+                                                                </tr>
+                                                                                                                                                                                                <tr>
+                                                                    <td>Week 5 - 2020-08-30</td>
+                                                                    <td>
+                                                                        <div class="virtual-class" id="class-3-5" data-id="class-3-5" data-strat_time="08/30/2020 11:00:00" data-end_time="08/30/2020 13:00:00">
+                                                                            <button class="btn btn-danger vc-danger-btn btn-width">Session Closed</button>
+                                                                            <button class="btn btn-warning vc-warning-btn btn-width">Ready For Class</button>
+                                                                            <button class="btn btn-default vc-default-btn btn-width">Not Available</button>
+                                                                            <a href="" target="_blank" class="btn btn-success vc-success-btn btn-width" style="color: white;">Go To Class</a>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div id="tute-3-5" data-id="tute-3-5" data-strat_time="08/30/2020 11:00:00" data-end_time="08/30/2020 13:00:00">
+                                                                            
+                                                                             
+                                                                                <button class="btn btn-default vc-default-btn btn-width">Not Available</button>
+                                                                                                                                                    </div>
+                                                                    </td>
+                                                                </tr>
+                                                                                                                                                                                                                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                </div>    </div>                                            
+                                </div>
+                            </div>
+                        </div>
+                    </div>   
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function(){
+        classData();
+        setInterval(function() {
+            classData();
+        }, 60 * 1000);
+        userOnline();
+        setInterval(function() {
+            userOnline();
+        }, 5 * 60 * 1000);
+    });
+    function userOnline(){
+        $.ajax({
+            url: "",
+            type: 'post',
+			data: {
+				_token: "",
+            },
+            success: function(data){
+                console.log(data);
+            }
+        });
+    }
+    function classData(){
+        console.log("OK");
+        $('.virtual-class').each(function(){
+            var id = $(this).data('id');
+            var strat_time = $(this).data('strat_time');
+            var end_time = $(this).data('end_time');
+            checkDisplay(id, strat_time, end_time);
+        });
+        $('.virtual-tute').each(function(){
+            var id = $(this).data('id');
+            var strat_time = $(this).data('strat_time');
+            var end_time = $(this).data('end_time');
+            checkDisplay(id, strat_time, end_time);
+        });
+    }
+    function checkDisplay(id, from_date, to_date){
+        var now = new Date();
+        var from_date = new Date(from_date);
+        var to_date = new Date(to_date);
+        from_date.setMinutes(from_date.getMinutes() - 15);
+        console.log(from_date);
+        console.log(to_date);
+        if(now >= from_date && now <= to_date){
+            $("#" + id + " .vc-danger-btn").css('display', 'none');
+            $("#" + id + " .vc-warning-btn").css('display', 'none');
+            $("#" + id + " .vc-default-btn").css('display', 'none');
+            $("#" + id + " .vc-success-btn").css('display', 'block');
+        }else if(now < from_date){
+            from_date_1 = from_date.setHours(0,0,0,0);
+            now_1 = now.setHours(0,0,0,0);
+            if(from_date_1 != now_1){
+                $("#" + id + " .vc-danger-btn").css('display', 'none');
+                $("#" + id + " .vc-warning-btn").css('display', 'none');
+                $("#" + id + " .vc-default-btn").css('display', 'block');
+                $("#" + id + " .vc-success-btn").css('display', 'none');
+            }else{
+                $("#" + id + " .vc-danger-btn").css('display', 'none');
+                $("#" + id + " .vc-warning-btn").css('display', 'block');
+                $("#" + id + " .vc-default-btn").css('display', 'none');
+                $("#" + id + " .vc-success-btn").css('display', 'none');
+            }
+        }else if(now > to_date){
+            $("#" + id + " .vc-danger-btn").css('display', 'block');
+            $("#" + id + " .vc-warning-btn").css('display', 'none');
+            $("#" + id + " .vc-default-btn").css('display', 'none');
+            $("#" + id + " .vc-success-btn").css('display', 'none');
+        }else{
+            $("#" + id + " .vc-danger-btn").css('display', 'none');
+            $("#" + id + " .vc-warning-btn").css('display', 'none');
+            $("#" + id + " .vc-default-btn").css('display', 'block');
+            $("#" + id + " .vc-success-btn").css('display', 'none');
+        }
+    }
+</script>
+        </main>
+    </div>
+</body>
+</html>
